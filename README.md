@@ -1,24 +1,24 @@
 # 🌤 Seasons
 
-**Seasons** é um Swift Package, que fornece a estação do ano atual com base em uma data e no hemisfério do usuário.
+**Seasons** is a Swift Package that provides the current season based on a given date and the user's hemisphere.
 
 ---
 
-## 🧭 Funcionalidades
+## 🧭 Features
 
-- ✅ Determina a estação atual (`.spring`, `.summer`, `.autumn`, `.winter`)
-- ✅ Suporte a hemisfério norte e sul
-- ✅ Localização automática (EN, PT, ES)
-- ✅ Compatível com Swift Package Manager
+- ✅ Determines the current season (`.spring`, `.summer`, `.autumn`, `.winter`)
+- ✅ Supports both northern and southern hemispheres
+- ✅ Automatically localized (EN, PT, ES)
+- ✅ Compatible with Swift Package Manager
 
 ---
 
-## 📦 Instalação (Swift Package Manager)
+## 📦 Installation (Swift Package Manager)
 
-1. No Xcode:  
+1. In Xcode:  
    `File > Add Packages...`
 
-2. Use a URL do repositório:
+2. Use the repository URL:
 
 ```
 https://github.com/UINick/Seasons.git
@@ -26,40 +26,36 @@ https://github.com/UINick/Seasons.git
 
 ---
 
-## 🛠 Uso básico
+## 🛠 Basic Usage
 
 ```swift
 import Seasons
 
 let season = SeasonManager.currentSeason(hemisphere: .south)
-print("A estação atual é: \(season.localized)")
+print("The current season is: \(season.localized)")
 ```
 
 ---
 
-## 🗺 Suporte a Localização
+## 🗺 Localization Support
 
-O SDK retorna o nome da estação no idioma do sistema automaticamente:
+The SDK automatically returns the season name in the system's language:
 
-| Idioma | Resultado |
-|--------|-----------|
-| EN     | Summer    |
-| PT-BR  | Verão     |
-| ES     | Verano    |
+| Language | Result   |
+|----------|----------|
+| EN       | Summer   |
+| PT-BR    | Verão    |
+| ES       | Verano   |
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 Sources/
-└── SeasonsSDK/
-    ├── Season.swift          # Enum com as estações
-    ├── SeasonManager.swift   # Lógica de cálculo
+└── Seasons/
+    ├── Season.swift          # Enum for seasons
+    ├── SeasonManager.swift   # Calculation logic
     └── Resources/
         └── Localizable.xcstrings
 ```
-
----
-
-
