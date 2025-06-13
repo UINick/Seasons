@@ -1,5 +1,5 @@
 import XCTest
-@testable import SeasonsSDK
+@testable import Seasons
 
 final class SeasonManagerTests: XCTestCase {
     

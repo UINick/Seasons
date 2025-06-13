@@ -15,6 +15,6 @@ public enum Season: String {
     case winter = "Winter"
     
     public var localized: String {
-        NSLocalizedString(self.rawValue, tableName: nil, bundle: .module, value: self.rawValue, comment: "")
+        NSLocalizedString(self.rawValue, bundle: .module, comment: "")
     }
 }

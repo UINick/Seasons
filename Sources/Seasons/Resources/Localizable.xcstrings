@@ -1,7 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "autumn" : {
+    "Autumn" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -24,7 +24,7 @@
         }
       }
     },
-    "spring" : {
+    "Spring" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -47,7 +47,7 @@
         }
       }
     },
-    "summer" : {
+    "Summer" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -70,7 +70,7 @@
         }
       }
     },
-    "winter" : {
+    "Winter" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
