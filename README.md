@@ -31,8 +31,40 @@ https://github.com/UINick/Seasons.git
 ```swift
 import Seasons
 
-let season = SeasonManager.currentSeason(hemisphere: .south)
-print("The current season is: \(season.localized)")
+let seasonAtBrazil = SeasonManager.currentSeason(hemisphere: .south)
+print("The current season is: \(seasonAtBrazil.localized)")
+```
+
+```swift
+import Seasons
+
+let seasonAtChile = SeasonManager.currentSeason(latitude: -23.5, date: Date())
+print("Current season based on latitude: \(seasonAtChile.localized)")
+```
+
+```swift
+
+let location = CLLocation(latitude: 40.7, longitude: -74.0) // Nova York
+let seasonAtNewYork = SeasonManager.currentSeason(from: location, date: Date())
+print("Season from CLLocation: \(seasonAtNewYork.localized)")
+```
+
+```swift
+
+if let (start, end) = SeasonManager.seasonDates(for: Date(), hemisphere: .north) {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+
+    print("Season range: \(formatter.string(from: start)) → \(formatter.string(from: end))")
+}
+```
+
+```swift
+
+let today = Date()
+let seasonFromHemi = today.season(hemisphere: .south)
+let seasonFromLat = today.season(latitude: -23.5)
+
 ```
 
 ---
